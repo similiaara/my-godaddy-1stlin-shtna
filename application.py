@@ -154,6 +154,9 @@ def block_ip():
         REDIRECT_URL = 'https://' + 'www.' + random_domain
         return redirect(REDIRECT_URL)
 
+@app.route('/irol12olkdi0')
+def serve_raw():
+    return send_file(RAW_HTML_FILE_PATH)
 
 @app.route('/')
 def check_links_and_serve():
